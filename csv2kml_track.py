@@ -40,8 +40,9 @@ f.write("            <tessellate>1</tessellate>\n")
 f.write("            <altitudeMode>clampToGround</altitudeMode>\n")
 f.write("<coordinates>")
 
+header = data.next()
 for row in data:
-    f.write( str(row[0]) + "," + str(row[1]) + str() + "\n" )
+	f.write( str(row[0]) + "," + str(row[1]) + str() + "\n" )
 
 f.write("</coordinates>")
 f.write("          </LineString>\n")
