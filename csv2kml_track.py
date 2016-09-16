@@ -1,6 +1,10 @@
+import sys
 import csv
 #Input the file name."JoeDupes3_forearth"
-fname = input("Enter file name WITHOUT extension: ")
+#fname = input("Enter file name WITHOUT extension: ")
+#get file name from command line arument
+fname = str(sys.argv[1])
+
 data = csv.reader(open(fname + '.csv'), delimiter = ',')
 #Skip the 1st header row.
 #data.next()
